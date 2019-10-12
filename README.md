@@ -1,4 +1,10 @@
-# ec2 deneb setup
+# circumfluous
+
+![](https://images.tmcnet.com/tmc/misc/articles/image/2019-aug/AdobeStock_282378637-dev-ops-supersize.jpeg)
+
+:upside_down_face:
+
+## [old] ec2 deneb setup
 
 nginx, supervisor, static stuff, some node stuff
 
@@ -73,59 +79,4 @@ short codes are disabled
 
 `letsencrypt certonly --webroot -w /home/ubuntu/www/circumfluo.us/static -d circumfluo.us -d www.circumfluo.us`
 
-`letsencrypt certonly --standalone -d tags.circumfluo.us -d archive.bldwn.co`
-
-for email:
-`letsencrypt certonly --standalone -d bldwn.co -d goose.im -d circumfluo.us`
-
-
-### email
-
-`/etc/postfix/main.cf`
-```
-myhostname = circumfluo.us
-mydomain = bldwn.co
-
-# Forwarding
-virtual_alias_domains = bldwn.co goose.im circumfluo.us
-virtual_alias_maps = hash:/etc/postfix/virtual
-
-# TLS parameters
-smtpd_tls_cert_file=/etc/letsencrypt/live/bldwn.co/fullchain.pem
-smtpd_tls_key_file=/etc/letsencrypt/live/bldwn.co/privkey.pem
-smtpd_tls_security_level=may
-smtp_tls_cert_file=/etc/letsencrypt/live/bldwn.co/fullchain.pem
-smtp_tls_key_file=/etc/letsencrypt/live/bldwn.co/privkey.pem
-smtp_tls_security_level=may
-
-
-smtpd_banner = $myhostname ESMTP $mail_name
-biff = no
-
-append_dot_mydomain = no
-
-readme_directory = no
-
-smtpd_relay_restrictions = permit_mynetworks permit_sasl_authenticated defer_unauth_destination
-alias_maps = hash:/etc/aliases
-alias_database = hash:/etc/aliases
-myorigin = /etc/mailname
-mydestination = $myhostname, localhost, localhost.localdomain, localhost
-relayhost =
-mynetworks = 127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128
-mailbox_size_limit = 0
-recipient_delimiter = +
-inet_interfaces = all
-inet_protocols = ipv4
-
-local_transport = error:local delivery is disabled
-```
-
-
-`/etc/postfix/virtual` (after changing, run `postmap /etc/postfix/virtual`)
-```
-@bldwn.co 	ghostbaldwin@gmail.com
-@goose.im 	ghostbaldwin@gmail.com
-@circumfluo.us 	ghostbaldwin@gmail.com
-@gtbrecs.com	ghostbaldwin@gmail.com
-```
+`letsencrypt certonly --standalone -d tags.circumfluo.us -d archive.cubegho.st`
