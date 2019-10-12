@@ -1,0 +1,6 @@
+version: '3'
+
+services:
+
+  nginx:
+    command: nginx -c /etc/nginx/nginx.conf

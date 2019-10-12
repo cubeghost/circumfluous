@@ -1,0 +1,55 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?diuyv8');
+	src:url('fonts/icomoon.eot?#iefixdiuyv8') format('embedded-opentype'),
+		url('fonts/icomoon.woff?diuyv8') format('woff'),
+		url('fonts/icomoon.ttf?diuyv8') format('truetype'),
+		url('fonts/icomoon.svg?diuyv8#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-mail:before {
+	content: "\e600";
+}
+.icon-twitter:before {
+	content: "\e601";
+}
+.icon-vimeo:before {
+	content: "\e602";
+}
+.icon-flickr:before {
+	content: "\e603";
+}
+.icon-dribbble:before {
+	content: "\e604";
+}
+.icon-github:before {
+	content: "\e605";
+}
+.icon-tumblr:before {
+	content: "\e606";
+}
+.icon-lastfm:before {
+	content: "\e607";
+}
+.icon-stackoverflow:before {
+	content: "\e608";
+}
+.icon-paypal:before {
+	content: "\e609";
+}

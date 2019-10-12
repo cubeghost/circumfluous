@@ -1,0 +1,45 @@
+version: '3'
+
+services:
+
+  php:
+    image: php:7-fpm-alpine
+    volumes:
+      - ./bin/archive:/var/www/archive
+
+  tagreplacer:
+    image: 'cubeghost/tagreplacer:latest'
+    ports:
+      - 4000:4000
+    environment:
+      - REDIS_PORT=6379
+      - REDIS_HOST=redis
+    volumes:
+      - ./.tagreplacer.env:/usr/src/app/.env
+    depends_on:
+      - redis
+
+  redis:
+    image: redis
+    ports: 
+      - 6379:6739
+
+  nginx:
+    image: nginx:alpine
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./bin/archive:/var/www/archive
+      - ./static:/var/www/static
+      - ./nginx:/etc/nginx
+      - certs:/etc/letsencrypt
+      - challenge:/var/www/certbot
+    command: nginx -c nginx.development.conf
+    depends_on:
+      - php
+      - tagreplacer
+
+volumes:
+  certs:
+  challenge:

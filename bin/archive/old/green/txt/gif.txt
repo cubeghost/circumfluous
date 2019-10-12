@@ -1,0 +1,70 @@
+<div class="node">
+	<a rel="gif" href="https://cubegho.st/data.goose.im/crystal/" target="_blank">
+	<div class="thumb" data-src="https://cubegho.st/data.goose.im/crystal/crystal.gif" data-pos="0% 0%" data-pos-shift="100% 0%"></div>
+	</a>
+</div>
+<div class="node">
+	<a rel="gif" href="https://cubegho.st/data.goose.im/anime/" target="_blank">
+	<div class="thumb" data-src="https://cubegho.st/data.goose.im/anime/anime.gif" data-pos="0% 0%" data-pos-shift="0% 100%"></div>
+	</a>
+</div>
+<div class="node">
+	<a rel="gif" href="https://cubegho.st/data.goose.im/water/" target="_blank">
+	<div class="thumb" data-src="https://cubegho.st/data.goose.im/water/water.gif" data-pos="20% 50%" data-pos-shift="60% 50%"></div>
+	</a>
+</div>
+<div class="node">
+	<a rel="gif" href="https://cubegho.st/data.goose.im/ocean/" target="_blank">
+	<div class="thumb" data-src="https://cubegho.st/data.goose.im/ocean/ocean.gif" data-pos="50% 2%" data-pos-shift="50% 70%"></div>
+	</a>
+</div>
+<div class="node">
+	<a rel="gif" href="https://cubegho.st/data.goose.im/slimy/" target="_blank">
+	<div class="thumb" data-src="https://cubegho.st/data.goose.im/slimy/slimy.gif" data-pos="50% 0%" data-pos-shift="50% 100%"></div>
+	</a>
+</div>
+<div class="node">
+	<a rel="gif" href="http://25.media.tumblr.com/997aab096a1ca7af487a410bd39f3b62/tumblr_muvjq2liu01qazbamo1_500.gif" target="_blank">
+	<div class="thumb" data-src="http://25.media.tumblr.com/997aab096a1ca7af487a410bd39f3b62/tumblr_muvjq2liu01qazbamo1_500.gif" data-pos="0% 60%" data-pos-shift="100% 60%"></div>
+	</a>
+</div>
+<div class="node">
+	<a rel="gif" href="http://s.goose.im/DSC_0395_net_.gif" target="_blank">
+	<div class="thumb" data-src="http://s.goose.im/DSC_0395_net_.gif" data-pos="80% 50%" data-pos-shift="80% 13%"></div>
+	</a>
+</div>
+<div class="node">
+	<a rel="gif" href="http://goose.im/selfies/" target="_blank">
+	<div class="thumb" data-src="http://goose.im/selfies/2/5.gif" data-pos="0% 0%" data-pos-shift="0% 100%"></div>
+	</a>
+</div>
+<div class="node">
+	<a rel="gif" href="http://31.media.tumblr.com/c2d26c1b08b42c7e043aaace577d4b36/tumblr_mpjajnnJ5H1qazbamo1_500.gif" target="_blank">
+	<div class="thumb" data-src="http://31.media.tumblr.com/c2d26c1b08b42c7e043aaace577d4b36/tumblr_mpjajnnJ5H1qazbamo1_500.gif" data-pos="0% 40%" data-pos-shift="80% 40%"></div>
+	</a>
+</div>
+<div class="node">
+	<a rel="gif" href="http://25.media.tumblr.com/ce82c3c4382cce65305b575ba14fff68/tumblr_ms63kxrwWH1qazbamo1_500.gif" target="_blank">
+	<div class="thumb" data-src="http://25.media.tumblr.com/ce82c3c4382cce65305b575ba14fff68/tumblr_ms63kxrwWH1qazbamo1_500.gif" data-pos="10% 50%" data-pos-shift="90% 50%"></div>
+	</a>
+</div>
+<div class="node">
+	<a rel="gif" href="http://s.goose.im/radarglitch.gif" target="_blank">
+	<div class="thumb" data-src="http://s.goose.im/radarglitch.gif" data-pos="50% 0%" data-pos-shift="50% 100%"></div>
+	</a>
+</div>
+<div class="node">
+	<a rel="gif" href="https://cubegho.st/data.goose.im/windshield/465.gif" target="_blank">
+	<div class="thumb" data-src="https://cubegho.st/data.goose.im/windshield/465.gif" data-pos="0% 20%" data-pos-shift="70% 20%"></div>
+	</a>
+</div>
+<div class="node">
+	<a rel="gif" href="https://cubegho.st/data.goose.im/windshield/" target="_blank">
+	<div class="thumb" data-src="https://cubegho.st/data.goose.im/windshield/windshield.gif" data-pos="0% 20%" data-pos-shift="70% 20%"></div>
+	</a>
+</div>
+<div class="node">
+	<a rel="gif" href="http://goose.im/remixitright/" target="_blank">
+	<div class="thumb" data-src="http://goose.im/remixitright/remix_hex_32color.gif" data-pos="0% 0%" data-pos-shift="0% 100%"></div>
+	</a>
+</div>

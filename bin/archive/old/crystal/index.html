@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<!-- goose.im v3 codename "corporate hell" -->
+<!-- 10/22/14 thru 12/16/14 -->
+<html>
+<head>
+    <title>alex baldwin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="jquery.fancybox.pack.js"></script>
+    <link href="jquery.fancybox.css" rel="stylesheet" type="text/css">
+    <link href="fonts.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open Sans:400,700" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+
+    </style>
+    <script type="text/javascript">
+    $(function() {
+
+        var stickyNavTop = $('nav').offset().top;
+        var stickyNav = function(){
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > stickyNavTop) {   $('nav').addClass('sticky');  } else {  $('nav').removeClass('sticky');   }
+        };
+        stickyNav();
+
+        $(window).scroll(function(){
+            stickyNav();
+            var pos = 20 + ($(window).scrollTop() / 14);
+            //var pos2 = 40 + ($(window).scrollTop() / 14);
+            $('header').css({'background-position':'0 ' + pos + '%'});
+            //$('body').css({'background-position':'0 ' + pos2 + '%'});
+        });
+
+        $('.fancybox').fancybox({
+            'padding':  0
+        });
+
+
+        $('nav svg').click(function(){
+            $('nav').toggleClass('close');
+        });
+
+
+    });
+    // let images load before calling masonry
+    $(window).on('load', function(){
+
+        var $work = $('section.work');
+        // initialize
+        $work.masonry({
+          itemSelector: 'article'
+        });
+
+    });
+    </script>
+</head>
+<body>
+    <header>
+        <a href=""><h1>ALEX BALDWIN</h1></a>
+    </header>
+    <nav class="close">
+        <svg version="1.1" id="Untitled-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 width="18px" height="12px" viewBox="0 0 18 12" enable-background="new 0 0 18 12" xml:space="preserve">
+            <g id="Layer_x25_201">
+                <rect width="18" height="2"/>
+                <rect y="5" width="18" height="2"/>
+                <rect y="10" width="18" height="2"/>
+            </g>
+        </svg>
+        <br>
+        <a href="#work">work</a>
+        <a href="#info">info</a>
+        <a href="#contact">contact</a>
+    </nav>
+    <h2 id="work">work</h2>
+    <h3>front end development + internet art</h3>
+    <section class="work">
+        <article>
+            <a href="https://www.tumblr.com/theme/39715" target="_blank">
+                <img src="https://33.media.tumblr.com/themes/screenshots/1rm42cz/4efcd3f8731ea74c0ab2a265e98b3692.png">
+            </a>
+            <p>pulsar theme, 2015</p>
+            <p><a href="https://www.tumblr.com/theme/39715" target="_blank">tumblr.com/theme/39715</a></p>
+        </article>
+        <article>
+            <a href="http://cubegho.st/blacklist/" target="_blank">
+                <img src="https://41.media.tumblr.com/28624e521d888afbfe13bab73dbffbf8/tumblr_nlqc6gh9Yo1qazbamo1_540.png">
+            </a>
+            <p>blacklist for facebook, 2015</p>
+            <p><a href="https://chrome.google.com/webstore/detail/blacklist-for-facebook/cenmgeenadipbainomfhgkapenbmgiom" target="_blank">chrome web store</a></p>
+        </article>
+        <article>
+            <a class="fancybox" href="https://cubegho.st/img/mau_blue.png">
+                <img src="https://cubegho.st/img/mau_blue.png">
+            </a>
+            <p>branding design for <i>millennial activists united</i>, 2014</p>
+        </article>
+        <article>
+            <a class="fancybox" href="http://41.media.tumblr.com/594dd1cd16b528c367ee50ac04520b06/tumblr_nc7o4pQnv61qazbamo1_1280.png">
+                <img src="http://41.media.tumblr.com/594dd1cd16b528c367ee50ac04520b06/tumblr_nc7o4pQnv61qazbamo1_1280.png">
+            </a>
+            <p>curated predictive text, 2014</p>
+        </article>
+        <article>
+            <a href="http://convention.girlscouts.org/kiosk/tiles/connect" target="_blank">
+                <img src="https://cubegho.st/img/connect.png">
+            </a>
+            <p>kiosk interface for <i>girl scouts of the usa</i>, 2014</p>
+            <p><a href="http://convention.girlscouts.org/kiosk/tiles/connect" target="_blank">convention.girlscouts.org</a></p>
+        </article>
+        <article>
+            <a href="http://justicethatsall.tumblr.com/post/102970361247/stay-on-top-of-whats-going-on-in-ferguson-find" target="_blank">
+                <img src="http://38.media.tumblr.com/6078eab4fe5522de65d743ff254698b9/tumblr_nf8y6zrbIO1u37tvbo1_500.png">
+            </a>
+            <p>social media graphics for <i>justicethatsall.org</i>, 2014</p>
+            <p><a href="http://justicethatsall.tumblr.com/" target="_blank">justicethatsall.tumblr.com</a></p>
+        </article>
+        <article>
+            <a href="http://voidco.re/" target="_blank">
+                <img src="https://cubegho.st/img/voidcore.gif">
+            </a>
+            <p>voidco.re preview for <i>#voidcore</i>, 2014</p>
+            <p><a href="http://voidco.re/" target="_blank">voidco.re</a></p>
+        </article>
+        <article>
+            <a href="http://convention.girlscouts.org/kiosk/quiz" target="_blank">
+                <img src="https://cubegho.st/img/quiz.png">
+            </a>
+            <p>interactive quiz for <i>girl scouts of the usa</i>, 2014</p>
+            <p><a href="http://convention.girlscouts.org/kiosk/quiz" target="_blank">convention.girlscouts.org</a></p>
+        </article>
+        <article>
+            <a class="fancybox" href="http://41.media.tumblr.com/0e1e107be1af15c955b5e5b9cb9f39b8/tumblr_nb33vr9LBM1qazbamo1_1280.png">
+                <img src="http://41.media.tumblr.com/0e1e107be1af15c955b5e5b9cb9f39b8/tumblr_nb33vr9LBM1qazbamo1_1280.png">
+            </a>
+            <p>welcome the void into yr heart for <i>#voidcore</i>, 2014</p>
+        </article>
+        <article>
+            <a href="http://www.sept6cta.org/" target="_blank">
+                <img src="https://cubegho.st/img/sept6cta.png">
+            </a>
+            <p>nationbuilder site for <i>#Sept6CTA</i>, 2014</p>
+            <p><a href="http://www.sept6cta.org/" target="_blank">sept6cta.org</a></p>
+        </article>
+        <article>
+            <a href="http://circumfluo.us/" target="_blank">
+                <img src="http://cubegho.st/circumfluous/1000001.png">
+            </a>
+            <p>assorted works inspired by susan kare, 2014</p>
+            <p><a href="http://circumfluo.us/" target="_blank">circumfluo.us</a></p>
+        </article>
+        <article>
+            <a class="fancybox" href="http://41.media.tumblr.com/504ea1c79bfe76eaa58a3765d671aa8f/tumblr_n9gb3vmXyM1qazbamo1_1280.png">
+                <img src="http://41.media.tumblr.com/504ea1c79bfe76eaa58a3765d671aa8f/tumblr_n9gb3vmXyM1qazbamo1_500.png">
+            </a>
+            <p>now that's what i call aesthetic, 2014</p>
+        </article>
+        <article>
+            <a class="fancybox" href="https://cubegho.st/img/gtbrand.png">
+                <img src="https://cubegho.st/img/gtbrand.png">
+            </a>
+            <p>preliminary redesign for <i>gtb</i>, 2014</p>
+        </article>
+        <article>
+            <a class="fancybox" href="https://farm3.staticflickr.com/2908/14177579115_69dcb2f1eb_h.jpg">
+                <img src="https://farm3.staticflickr.com/2908/14177579115_f0a9c95a6b_c.jpg">
+            </a>
+            <p>quiet, 2014</p>
+        </article>
+        <article>
+            <a href="http://chorus.goose.im/" target="_blank">
+                <img src="https://cubegho.st/img/chorus.png">
+            </a>
+            <p>chorus, 2010-2014</p>
+            <p>a content management system</p>
+            <p><a href="http://chorus.goose.im/" target="_blank">chorus.goose.im</a></p>
+        </article>
+        <article>
+            <a href="http://dev.goose.im/mesh" target="_blank">
+                <img src="http://41.media.tumblr.com/f87618576b9ffcf59510f59c36556b73/tumblr_n49arxjz5y1qazbamo1_1280.png">
+            </a>
+            <p>the aesthetic has ended, 2014</p>
+            <p><a href="http://dev.goose.im/mesh" target="_blank">dev.goose.im/mesh</a></p>
+        </article>
+        <article>
+            <a href="http://gtbrecs.com/" target="_blank">
+                <img src="https://cubegho.st/img/gtb.png">
+            </a>
+            <p>gtb records website, 2014</p>
+            <p><a href="http://gtbrecs.com/">gtbrecs.com</a></p>
+        </article>
+        <article>
+            <a href="http://tags.goose.im/" target="_blank">
+                <img src="https://cubegho.st/img/masstagreplacer.png">
+            </a>
+            <p>mass tag replacer, 2013-2014</p>
+            <p><a href="http://tags.goose.im/">tags.goose.im</a></p>
+        </article>
+        <article>
+            <a href="http://www.tumblr.com/theme/38385/" target="_blank">
+                <img src="http://33.media.tumblr.com/themes/screenshots/1rm42cz/73e2ae49555e7e644b6b82315a5b92e9.png">
+            </a>
+            <p>chromosphere theme, 2013-2014</p>
+            <p><a href="http://www.tumblr.com/theme/38385/">tumblr.com/theme/38385</a></p>
+        </article>
+        <article>
+            <a href="http://data.goose.im/" target="_blank">
+                <img src="http://cubegho.st/data.goose.im/ocean/ocean.gif">
+            </a>
+            <p>various glitch gifs, 2013</p>
+            <p><a href="http://data.goose.im/">data.goose.im</a></p>
+        </article>
+        <article>
+            <a class="fancybox" href="http://40.media.tumblr.com/23ef9531d4623273d5d259f665563ce0/tumblr_mua2rlZ1l81qazbamo1_1280.png">
+                <img src="http://40.media.tumblr.com/23ef9531d4623273d5d259f665563ce0/tumblr_mua2rlZ1l81qazbamo1_500.png">
+            </a>
+            <p>a perpetual apology for those times that keep happening, 2013</p>
+        </article>
+        <article>
+            <a class="fancybox" href="https://farm6.staticflickr.com/5524/9316106947_68d193d885_h.jpg">
+                <img src="https://farm6.staticflickr.com/5524/9316106947_645fb1e863_c.jpg">
+            </a>
+            <p>piano man, 2013</p>
+        </article>
+        <article>
+            <a class="fancybox" href="https://cubegho.st/img/ladyliberty.gif">
+                <img src="https://cubegho.st/img/ladyliberty.gif">
+            </a>
+            <p>lady liberty, 2013</p>
+        </article>
+        <article>
+            <a href="http://make.goose.im/" target="_blank">
+                <img src="https://cubegho.st/img/makeagoose.png">
+            </a>
+            <p>make-a-goose, 2010</p>
+            <p><a href="http://make.goose.im/">make.goose.im</a></p>
+        </article>
+        <article>
+            <a class="fancybox" href="https://farm8.staticflickr.com/7292/8744277003_2a1e5de777_h.jpg">
+                <img src="https://farm8.staticflickr.com/7292/8744277003_81c370cff3_c.jpg">
+            </a>
+            <p>windshield, 2013</p>
+        </article>
+        <a href="http://codepen.io/goosey/"><article class="codepen">
+            <span>codepen &#8594;</span>
+        </article></a>
+        <a href="http://flickr.com/gooseyinthesky"><article class="flickr">
+            <span>flickr &#8594;</span>
+        </article></a>
+        <a href="more/"><article class="more">
+            <span>view more work &#8594;</span>
+        </article></a>
+
+        <!--<article>
+            <a class="fancybox" href="https://farm4.staticflickr.com/3691/9117614193_7131c5b8ed_b.jpg">
+                <img src="https://farm4.staticflickr.com/3691/9117614193_7131c5b8ed_b.jpg">
+            </a>
+            <p>untitled pixel sort, 2013</p>
+        </article>
+        <article>
+            <a class="fancybox" href="https://farm9.staticflickr.com/8246/8595775805_4828e68ace_h.jpg">
+                <img src="https://farm9.staticflickr.com/8246/8595775805_4828e68ace_c.jpg">
+            </a>
+            <p>light and texture, 2013</p>
+        </article>
+        <article>
+            <a class="fancybox" href="https://farm9.staticflickr.com/8073/8259109519_a6fdc5d807_h.jpg">
+                <img src="https://farm9.staticflickr.com/8073/8259109519_a6fdc5d807_c.jpg">
+            </a>
+            <p>bear, 2013</p>
+        </article>
+        <article>
+            <a class="fancybox" href="https://farm9.staticflickr.com/8211/8382461530_fb6edd1674_h.jpg">
+                <img src="https://farm9.staticflickr.com/8211/8382461530_fb6edd1674_c.jpg">
+            </a>
+            <p>nothing wrong, 2013</p>
+        </article>
+        <article>
+            <a class="fancybox" href="https://farm9.staticflickr.com/8380/8560115705_297fa41cf1_o.gif">
+                <img src="https://farm9.staticflickr.com/8380/8560115705_297fa41cf1_o.gif">
+            </a>
+            <p>ugh, 2013</p>
+        </article>-->
+        <br>
+    </section>
+    <!--<center>&#8984;</center>-->
+    <h2 id="info">info</h2>
+    <section class="info">
+        <div>
+            <!--<p>my name is alex, and I make radical things and put them on the internet. I started coding at the age of 11, thanks to the wonderful pinnacle of early-2000s
+            internet glory we call <a href="http://www.neopets.com/help/html1.phtml">Neopets</a>. </p>-->
+            <!--<p>back in <i>my</i> day we had to round our corners by hand, walking 3 miles in the snow to and from W3C school</p>-->
+            <p>Once upon a time, as you may have heard, there was no such thing as border-radius &mdash; we had to round our corners by hand.
+            IE6 compatibility was still a genuine and troublesome concern, and we had no Mozilla Developer Network to save us from the throes of W3C Schools.
+            These were dark times.</p>
+            <p>I learned HTML from <a href="http://www.neopets.com/help/html1.phtml" title="seriously click this" target="_blank">Neopets</a> when it was in its prime and picked up CSS somewhere along the way,
+            then jumped headfirst into Javascript by fiddling with copied and pasted code snippets. I started working with PHP when I was 13.
+            My whole life has been spent around computers, but at the same time it's been spent around art &mdash;
+            from primitive drawings on the white walls of my parents' house to the glitch art I continue to refine today.
+            Aesthetics are just as important to me as functionality, so I craft things with both in mind. </p>
+            <p>Beautiful and artful front-end experiences are what I love to build most. </p>
+            <p>I grew up in suburban Detroit with a programmer and graphic designer for parents.
+            After discovering that traditional higher education is totally not for me, I now live in Brooklyn, doing full-time web development work for Girl Scouts of the USA.
+            <!--As someone who is both queer and disabled, activism and human rights work are important parts of my life, and I am currently doing volunteer work for a
+            nonprofit focused on ending police brutality.-->Activism and human rights work are incredibly important to me, and I currently do volunteer work for several groups focused on ending police brutality. I like rocks, <a href="http://gayformaps.tumblr.com/" target="_blank">maps</a>, plants, and enjoying life as a gay, genderless space alien.</p>
+            <center><img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Emoji_u1f30a.svg" height="30"></center>
+        </div>
+    </section>
+    <h2 id="contact">contact</h2>
+    <section class="contact">
+        <div>
+            <p>
+                <a href="mailto:alex@cubegho.st"><span class="icon-mail"></span></a>
+                <a href="http://github.com/goosey"><span class="icon-github"></span></a>
+                <a href="http://twitter.com/cubeghost"><span class="icon-twitter"></span></a>
+                <a href="http://vimeo.com/goosey"><span class="icon-vimeo"></span></a>
+                <a href="http://flickr.com/gooseyinthesky"><span class="icon-flickr"></span></a>
+            </p>
+            <!--<p>Also find me on <a href="http://blog.goose.im/">tumblr</a>, <a href="http://last.fm/user/goosegooseduck">last.fm</a>, <a href="http://listography.com/goose">listography</a></p>
+       --> </div>
+    </section>
+    <footer>
+        <center><img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Emoji_u1f424.svg" height="30"></center>
+        <p>copyright alex baldwin/goose.im 2014</p>
+    </footer>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-37168472-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+        /* reset */
+        * {margin:0;padding:0;outline:0;border:0;box-sizing:border-box;}
+        
+        /* colors */
+        /* blue:    #5dbbdf
+        /* pink:    #f8a5ce
+        
+        /* basic */
+        html {height:100%;width:100%;}
+        body {font-weight:300;font-family:'Montserrat';background:#fff url(pixeltile2.svg);background-size:100%;background-position:0 40%;color:#333;height:100%;width:100%;}
+        section {width:90em;margin:0 auto;padding:3em 1em;}
+        h2 {text-align:center;letter-spacing:.1em;text-transform:uppercase;padding-top:3em;}
+        h3 {text-align:center;letter-spacing:.1em;text-transform:uppercase;margin-top:1em;color:#999;}
+        a {text-decoration:none;color:#5dbbdf;}
+        a:hover {color:#f8a5ce;}
+        br {clear:both;}
+
+        /* header */
+        header {width:100%;height:70%;background:url(crystal.png);display:block;background-position:0 20%;}
+        h1 {border:5px solid #fff;width:12em;font-size:3em;font-weight:400;text-align:center;display:block;margin:0 auto;color:#fff;letter-spacing:.1em;position:absolute;top:35%;left:50%;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);}
+        
+        /* nav */
+        nav {position:absolute;top:70%;padding-top:3em;padding-right:3em;right:0;z-index:100;background:#fff;display:block;width:13em;height:10em;}
+        nav.sticky {position:fixed;top:0;}
+        nav svg {width:2em;height:2em;cursor:pointer;background:#fff;fill:#666;float:right;margin-bottom:1em;}
+        nav a {background:#fff;display:block;text-align:right;text-transform:uppercase;color:#333;padding:0.3em 0.3em 0.6em 0.3em;margin-right:3em;}
+        nav a:nth-child(3) {margin-top:-3em;}
+        nav a:hover {color:#5dbbdf;}
+        nav.close {width:6em;height:6em;}
+        nav.close a {display:none;}
+        
+        /* work */
+        article {margin:2em 0 1em 3em;}
+        .work article {float:left;}
+        article img {max-width:26em;}
+        article p {margin:0.5em 0;font-size:0.8em;text-transform:uppercase;color:#999;max-width:32em;}
+        .more,.codepen,.flickr {text-align:center;width:26em;padding:4em 2em;display:inline-block;background:#5dbbdf;color:#fff;text-transform:uppercase;}
+        .codepen {background:#fff;color:#333;border:#333 solid 3px;}
+        .flickr {background:#f8a5ce;}
+                
+        /* info & contact */
+        section > div {width:80%;margin:0 10%;border:3px #333 solid;padding:2em;}
+        section > div > p {line-height:1.2em;letter-spacing:.05em;font-size:1.25em;font-family:'Open Sans';margin-bottom:1em;}
+        .contact > div {padding:0;}
+        .contact > div > p:first-child {background:#333;padding:2em;text-align:center;margin:0!important;}
+        .contact > div > p {margin:1em 2em;}
+        .contact a span {font-size:32px;padding:1em;color:#fff;}
+        .contact a span:hover {color:#5dbbdf;}
+        
+        /* more */
+        ul li {margin-left:2em;}
+        .back {font-size:4em;text-align:center;display:block;}
+                
+        /* footer */
+        footer {width:40%;margin:8em 30% 1em 30%;font-size:0.8em;color:#ccc;text-align:center;text-transform:uppercase;}
+        footer img {margin-bottom:8em;}
+
+
+        /* make that shit responsive ! */
+        @media (min-width:601px) and (max-width:90em) {
+      		header {background-size:150%;}
+            section {width:100%;}
+            article {max-width:28%;}
+            article img {max-width:100%;}
+            .info p {font-size:1.2em;}
+        }
+        
+        @media (max-width:600px) {
+            header {height:20%;background-size:300%;}
+            h1 {width:80%;font-size:1.6em;border-width:3px;top:10%;}
+            h3 {font-size:0.8em;}
+            nav {display:none;}
+            
+            section {width:100%;}
+            section.work {width:90%;margin:0 5%;}
+            article {margin:1em 0;width:100%;margin-left:-16px;}
+            article img {max-width:100%;}
+            .more,.codepen,.flickr {width:100%;}
+            
+            section > div {width:90%;margin:0 5%;}
+            section > div > p {font-size:1em;}
+            .contact a span {padding:0.5em;}
+        }
