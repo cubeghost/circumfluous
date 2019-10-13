@@ -6,6 +6,7 @@ services:
     image: php:7-fpm-alpine
     volumes:
       - ./bin/archive:/var/www/archive
+      - secretbase:/var/www/secretbase
 
   tagreplacer:
     image: 'cubeghost/tagreplacer:latest'
@@ -15,9 +16,15 @@ services:
       - REDIS_PORT=6379
       - REDIS_HOST=redis
     volumes:
-      - ./.tagreplacer.env:/usr/src/app/.env
+      - ${PWD}/.tagreplacer.env:/usr/src/app/.env
     depends_on:
       - redis
+
+  secretbase:
+    image: 'cubeghost/secretbase:latest'
+    volumes: 
+      - secretbase:/usr/src/app
+      - ${PWD}/.secretbase.env:/usr/src/app/.env
 
   redis:
     image: redis
@@ -31,10 +38,11 @@ services:
       - 443:443
     volumes:
       - ./bin/archive:/var/www/archive
+      - secretbase:/var/www/secretbase
       - ./static:/var/www/static
-      - ./nginx/mime.types:/etc/nginx/mime.types
-      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
-      - ./nginx/nginx.development.conf:/etc/nginx/nginx.development.conf
+      - ${PWD}/nginx/mime.types:/etc/nginx/mime.types
+      - ${PWD}/nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ${PWD}/nginx/nginx.development.conf:/etc/nginx/nginx.development.conf
       - certs:/etc/letsencrypt
       - challenge:/var/www/certbot
     command: nginx -c nginx.development.conf
@@ -43,5 +51,6 @@ services:
       - tagreplacer
 
 volumes:
+  secretbase:
   certs:
   challenge:
