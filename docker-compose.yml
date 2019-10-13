@@ -7,6 +7,7 @@ services:
     volumes:
       - ./bin/archive:/var/www/archive
       - secretbase:/var/www/secretbase
+      - ${PWD}/.secretbase.env:/var/www/secretbase/.env
 
   tagreplacer:
     image: 'cubeghost/tagreplacer:latest'
@@ -22,9 +23,9 @@ services:
 
   secretbase:
     image: 'cubeghost/secretbase:latest'
+    tty: true
     volumes: 
       - secretbase:/usr/src/app
-      - ${PWD}/.secretbase.env:/usr/src/app/.env
 
   redis:
     image: redis
