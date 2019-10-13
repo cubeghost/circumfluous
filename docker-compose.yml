@@ -32,7 +32,9 @@ services:
     volumes:
       - ./bin/archive:/var/www/archive
       - ./static:/var/www/static
-      - ./nginx:/etc/nginx
+      - ./nginx/mime.types:/etc/nginx/mime.types
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/nginx.development.conf:/etc/nginx/nginx.development.conf
       - certs:/etc/letsencrypt
       - challenge:/var/www/certbot
     command: nginx -c nginx.development.conf
