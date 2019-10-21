@@ -7,4 +7,4 @@ services:
     volumes:
       - certs:/etc/letsencrypt
       - challenge:/var/www/certbot
-    command: certbot certonly --standalone -d goose.im
+    command: certonly --standalone -d goose.im
