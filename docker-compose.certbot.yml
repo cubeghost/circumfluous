@@ -4,7 +4,7 @@ services:
 
   certbot:
     image: certbot/certbot
-    entrypoint: '/bin/sh'
     volumes:
       - certs:/etc/letsencrypt
       - challenge:/var/www/certbot
+    command: certbot certonly --standalone -d goose.im
