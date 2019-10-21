@@ -3,8 +3,10 @@ version: '3'
 services:
 
   certbot:
-    image: certbot/certbot
+    image: certbot/dns-digitalocean
     volumes:
+      - ${PWD}/certbot.ini:/etc/letsencrypt/cli.ini
+      - /var/digitalocean.ini:/var/digitalocean.ini
       - certs:/etc/letsencrypt
       - challenge:/var/www/certbot
-    command: certonly --standalone -d goose.im
+    command: certonly -d goose.im
