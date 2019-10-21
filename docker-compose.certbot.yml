@@ -4,7 +4,7 @@ services:
 
   certbot:
     image: certbot/certbot
-    tty: true
+    entrypoint: '/bin/sh'
     volumes:
       - certs:/etc/letsencrypt
       - challenge:/var/www/certbot
