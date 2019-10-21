@@ -4,6 +4,9 @@ services:
 
   php:
     image: php:7-fpm-alpine
+    build:
+      context: .
+      dockerfile: php.Dockerfile
     volumes:
       - ./bin/archive:/var/www/archive
       - secretbase:/var/www/secretbase

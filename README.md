@@ -8,12 +8,20 @@
 - install `docker` (and `systemctl enable docker` to start on boot)
 - install `docker-compose`
 - install `haveged` (entropy) (https://www.digitalocean.com/community/tutorials/how-to-setup-additional-entropy-for-cloud-servers-using-haveged)
-- [?] install `pass`
-- [?] install `docker-credential-pass` (https://github.com/docker/docker-credential-helpers/releases)
 - create git remote and working dir (`/var/circumfluous.git` and `/var/circumfluous`)
+- init empty git repository (`git init --bare`) in `/var/circumfluous.git`
+- create git `post-receive` hook in `/var/circumfluous.git/hooks` (and `chmod +x`)
 - create user, add to `users` group, and chmod above directories (see https://medium.com/@francoisromain/vps-deploy-with-git-fea605f1303b)
-- [?] init gpg and pass (https://github.com/docker/docker-credential-helpers/issues/102#issuecomment-388974092)
 - `docker login`
+
+#### config
+put `.secretbase.env` and `.tagreplacer.env` in `/var/circumfluous`
+
+put ditialocean token for certbot dns in `/var/digitalocean.ini`:
+```
+dns_digitalocean_token = 
+```
+
 
 ## [old] ec2 deneb setup
 

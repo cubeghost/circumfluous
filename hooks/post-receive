@@ -1,0 +1,8 @@
+DIR=/var/circumfluous/
+REPO=/var/circumfluous.git/
+
+git --work-tree=$DIR --git-dir=$REPO checkout -f
+
+cd $DIR
+
+./scripts/docker_production.sh restart && echo '{ cool: \e[32mtrue\e[39m }'
